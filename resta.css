@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+a{
+    text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 10px 0; /* reduced padding */
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertically centers items */
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+ 
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.site-footer{
+    margin-left: 42%;
+}
+
+.hero {
+  background: url(../Images/pexels-ella-olsson-572949-1640774.jpg) center/cover no-repeat;
+  color: #000000;
+  text-align: center;
+  padding: 140px 0;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn-primary {
+  background: #ffeb3b;
+  color: #333;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.btn-primary:hover {
+  background: #fdd835;
+}
+
+.menu-section {
+  background: #f5f5f5;
+  padding: 80px 0;
+}
+.menu-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #d32f2f;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+.menu-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.menu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.menu-card h3 {
+  padding: 16px;
+  font-size: 1.4rem;
+  color: #d32f2f;
+}
+.menu-card p {
+  padding: 0 16px 16px;
+  color: #555;
+}
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.contact-section {
+    background-color: #000000;
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 10px;
+}
+
+.contact-card {
+    background-color: #222;
+    border-left: 5px solid #ffffff;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(235, 235, 235, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.contact-card a {
+    color: #66ff99;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}

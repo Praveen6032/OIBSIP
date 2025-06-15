@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Payment | Pizza Paradise</title>
+  <link rel="stylesheet" href="payment.css" />
+  <link rel="shortcut icon" href="../Images/credit-card.png" type="image/x-icon">
+  <script src="../INTERNSHIPS/payment.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Complete Your Payment</h1>
+    <p>Secure & Fast Checkout</p>
+  </header>
+
+  <section class="payment-form">
+    <form onsubmit="handlePayment(event)">
+      <label>
+        Name on Card:
+        <input type="text" placeholder="e.g., John Doe" required />
+      </label>
+
+      <label>
+        Card Number:
+        <input type="text" placeholder="1234 5678 9012 3456" pattern="[0-9]{16}" maxlength="16" required />
+      </label>
+
+      <label>
+        Expiration Date:
+        <input type="month" required />
+      </label>
+
+      <label>
+        CVV:
+        <input type="text" placeholder="123" pattern="[0-9]{3}" maxlength="3" required />
+      </label>
+
+      <button type="submit">Pay Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pizza Paradise | Secure Checkout</p>
+  </footer>
+</body>
+</html>

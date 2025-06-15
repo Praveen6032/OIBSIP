@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Paradise</title>
+  <link rel="stylesheet" href="../INTERNSHIPS/pizza.css" />
+  <script src="../INTERNSHIPS/payment.js" defer></script>
+  <link rel="icon" type="image/png" href="../Images/pizza (1).png" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1>🍕 Pizza Paradise</h1>
+      <p class="tagline">Delicious pizzas delivered with love.</p>
+    </div>
+  </header>
+
+  <section class="offer-section">
+    <div class="container">
+      <h2>🔥 Special Offer!</h2>
+      <p>
+        Get <strong>20% OFF</strong> on orders above ₹1499.
+        Use code: <code>PIZZA20</code>
+      </p>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="../Images/1.jpg" alt="Margherita Pizza" />
+          <h3>Margherita Pizza</h3>
+          <p>Fresh mozzarella, basil, tomato sauce</p>
+          <p class="price">₹199</p>
+          <button onclick="addToCart('Margherita Pizza', 199)">Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="../Images/2.jpg" alt="BBQ Chicken Pizza" />
+          <h3>BBQ Chicken</h3>
+          <p>Fresh mozzarella, basil, chicken toppings</p>
+          <p class="price">₹399</p>
+          <button onclick="addToCart('BBQ Chicken', 399)">Add to Cart</button>
+        </div>
+        <div class="menu-card">
+          <img src="../Images/3.jpg" alt="Paneer Pizza" />
+          <h3>Paneer Pizza</h3>
+          <p>Fresh mozzarella, basil, paneer sauce</p>
+          <p class="price">₹299</p>
+          <button onclick="addToCart('Paneer Pizza', 299)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart-section">
+    <div class="container">
+      <h2>Your Cart 🛒</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: ₹0.00</p>
+      <a href="../INTERNSHIPS/payment.html">
+        <button class="btn-pay">Pay Now</button>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Pizza Paradise | Order Now and Save</p>
+    </div>
+  </footer>
+
+</body>
+</html>

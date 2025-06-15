@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Haven</title>
+  <link rel="stylesheet" href="choco.css">
+  <script src="../INTERNSHIPS/payment.js"></script>
+  <link rel="shortcut icon" href="../Images/cake-slice.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Chocolate Haven</h1>
+    <p>Indulge in Sweet Bliss 🎂</p>
+  </header>
+
+  <section class="offer">
+    <h2>🍫 Chocolate Special!</h2>
+    <p>Use code <code>CHOCOLOVE</code> to get ₹50 OFF on all cakes!</p>
+  </section>
+
+  <section class="item-menu">
+    <h2>Top Picks</h2>
+
+    <div class="item">
+      <img src="../Images/pexels-abhinavcoca-291528.jpg" alt="Dark Chocolate Cake">
+      <h3>Dark Chocolate</h3>
+      <p>Intense, moist and rich flavor</p>
+      <p class="price">₹349</p>
+      <button onclick="addToCart('Dark Chocolate', 349)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../Images/pexels-matvalina-29857044.jpg" alt="Choco Truffle Cake">
+      <h3>Choco Truffle</h3>
+      <p>Decadent layers of chocolate</p>
+      <p class="price">₹399</p>
+      <button onclick="addToCart('Choco Truffle', 399)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../Images/pexels-valeriya-185471.jpg" alt="Chocolate Mousse Cake">
+      <h3>Chocolate Mousse</h3>
+      <p>Silky mousse with dark chocolate glaze</p>
+      <p class="price">₹379</p>
+      <button onclick="addToCart('Chocolate Mousse', 379)">Add to Cart</button>
+    </div>
+
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart 🛒</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0.00</p>
+    <a href="payment.html"><button>Pay Now</button></a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chocolate Haven | Dessert Delivered</p>
+  </footer>
+</body>
+</html>

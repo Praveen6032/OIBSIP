@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pasta Palace</title>
+  <link rel="stylesheet" href="pasta.css" />
+  <script src="../INTERNSHIPS/payment.js"></script>
+  <link rel="shortcut icon" href="../Images/pasta.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Pasta Palace</h1>
+    <p>Italian Flavor in Every Bite 🍝</p>
+  </header>
+
+  <section class="offer">
+    <h2>🥳 Pasta Fiesta!</h2>
+    <p>Buy 2 get 1 free. Use code: <code>PASTADEAL</code></p>
+  </section>
+
+  <section class="item-menu">
+    <h2 class="menu-title">Popular Pastas</h2>
+    <div class="item">
+      <img src="../Images/pexels-ffawdyy-13294544.jpg" alt="Alfredo Pasta" />
+      <h3>Alfredo</h3>
+      <p>Rich and creamy white sauce pasta</p>
+      <p class="price">₹229</p>
+      <button onclick="addToCart('Alfredo', 229)">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="../Images/pexels-enginakyurt-11220208.jpg" alt="Arrabiata Pasta" />
+      <h3>Arrabiata</h3>
+      <p>Spicy red sauce with herbs</p>
+      <p class="price">₹199</p>
+      <button onclick="addToCart('Arrabiata', 199)">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="../Images/pexels-shameel-mukkath-3421394-5639532.jpg" alt="Pesto Pasta" />
+      <h3>Pesto Pasta</h3>
+      <p>Fresh basil pesto with Parmesan and olive oil</p>
+      <p class="price">₹259</p>
+      <button onclick="addToCart('Pesto Pasta', 259)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart 🛒</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0.00</p>
+    <a href="payment.html"><button>Pay Now</button></a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pasta Palace | Love from Italy</p>
+  </footer>
+</body>
+</html>

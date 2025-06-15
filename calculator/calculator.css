@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../../Images/pexels-karolina-grabowska-5412398.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.calculator {
+  background-color: #1c1a1a;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.calculator form {
+  width: 340px; /* 70px * 4 buttons + 5px * 3 margins between = 340px */
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+form .display input {
+    color: rgba(255, 253, 253, 0.781);
+  width: 100%;
+  height: 90px;
+  font-size: 2.5rem;
+  padding: 10px 15px;
+  text-align: right;
+  background-color: rgba(0, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+  white-space: nowrap;
+  border: none;
+  outline: none;
+}
+
+/* Button Styles */
+.calculator form input[type="button"] {
+  width: 70px;
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.ac {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+.del {
+  background-color: #ff3333;
+  color: white;
+}
+
+.symbols {
+  background-color: bisque;
+}
+
+.symbtns {
+  background-color: skyblue;
+}
+
+.special {
+  background-color: green;
+  color: white;
+}
+
+.equal {
+  background-color: green;
+  color: white;
+  width: 150px;
+}
+
+/* Hover Effects */
+.symbtns:hover {
+  background-color: royalblue;
+  color: white;
+}
+
+.symbols:hover {
+  background-color: red;
+  color: white;
+}
+
+.special:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+.ac:hover,
+.del:hover {
+  opacity: 0.9;
+}
+
+.equal:hover {
+  background-color: darkgreen;
+}

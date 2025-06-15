@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burger Bliss</title>
+  <link rel="stylesheet" href="burger.css" />
+  <link rel="shortcut icon" href="../Images/burger.png" type="image/x-icon">
+  <script src="../INTERNSHIPS/payment.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Burger Bliss</h1>
+    <p>Stacked with Flavor 🍔</p>
+  </header>
+
+  <section class="offer">
+    <h2>🔥 Today's Deal!</h2>
+    <p>Flat <strong>15% OFF</strong> on orders over ₹999. Use code: <code>BURGER15</code></p>
+  </section>
+
+  <section class="item-menu">
+    <h2>Our Burgers</h2>
+
+    <div class="item">
+      <img src="../Images/pexels-andra-325634-918581.jpg" alt="Classic Burger" />
+      <h3>Classic Burger</h3>
+      <p>Juicy beef patty with crisp lettuce and cheese</p>
+      <p class="price">₹249</p>
+      <button onclick="addToCart('Classic Burger', 249)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../Images/pexels-gonzalo-acuna-166058093-10922930.jpg" alt="Spicy Chicken Burger" />
+      <h3>Spicy Chicken</h3>
+      <p>Spicy chicken fillet with creamy mayo</p>
+      <p class="price">₹279</p>
+      <button onclick="addToCart('Spicy Chicken', 279)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../Images/pexels-fernanda-lima-420898164-16108602.jpg" alt="Cheese Burst Burger" />
+      <h3>Cheese Burst Burger</h3>
+      <p>Loaded with creamy molten cheese and fresh veggies</p>
+      <p class="price">₹229</p>
+      <button onclick="addToCart('Cheese Burst Burger', 229)">Add to Cart</button>
+    </div>
+
+  </section>
+
+  <section class="cart">
+    <h2>Your Cart 🛒</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0.00</p>
+    <a href="payment.html"><button>Pay Now</button></a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Burger Bliss | Freshly Grilled Goodness</p>
+  </footer>
+</body>
+</html>
