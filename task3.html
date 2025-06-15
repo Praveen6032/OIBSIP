@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temperature converter for Celsius, Fahrenheit, and Kelvin.">
+    <meta name="keywords" content="temperature converter, Celsius, Fahrenheit, Kelvin">
+    <meta name="author" content="Praveen Vadlakonda">
+    <title>Temperature Converter</title>
+    <link rel="icon" type="image/x-icon" href="../OIBSIP/Images/thermometer.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    <main role="main" class="converter-container">
+        <section class="converter-card" aria-labelledby="converter-heading">
+            <h1 id="converter-heading">Temperature Converter</h1>
+            <div class="input-group">
+                <label for="temp-input">Enter Temperature:</label>
+                <input type="number" id="temp-input" placeholder="e.g., 25" aria-describedby="temp-error" step="any">
+                <p id="temp-error" class="error-message" role="alert"></p>
+            </div>
+            <div class="input-group">
+                <label for="input-unit">From Unit:</label>
+                <select id="input-unit" aria-label="Select input temperature unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="output-unit">To Unit:</label>
+                <select id="output-unit" aria-label="Select output temperature unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+            <button id="convert-btn" class="cta-button" disabled>Convert</button>
+            <div class="result" aria-live="polite">
+                <h2>Converted Temperature:</h2>
+                <p id="result-text">N/A</p>
+            </div>
+        </section>
+    </main>
+    <script src="task3.js"></script>
+</body>
+</html>
